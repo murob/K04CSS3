@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C11MediaImport.html</title>
+    <style>
+        /*
+        @import
+        - <link> 태그를 대체할 수 있다.
+        - style태그안에서 사용해야 하고 반드시 최상단에 선언해야한다.
+        - CSS파일에 오류가 있는 경우 다운로드 하지 않는다.
+        */
+        @import url('./style/import.css');
+        .content{
+            background-color: black; color: red;
+        }
+
+        /*
+        @media
+        - 해당 웹페이지를 디바이스의 종류에 따라 각각 다르게
+        화면을 구성할 수 있게 해주는 기능을 가지고 있다.
+        - 스크린용과 프린트용을 구분해야할 때 사용한다.
+        */
+        @media screen {
+            .content{/* 모니터에서는 검은바탕에 흰색글씨로 출력된다. */
+                background-color: black; color: white;
+            }
+        }
+        @media print{
+            .content{/* 프린트 했을 때는 빨간바탕에 노란색 글씨로 출력된다. */
+                background-color: red; color: yellow;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>media속성</h2>
+    <di class="content">
+        <p>
+            <h3>文 지지율 30% 무너졌다…긍정 29% 취임후 최저</h3>
+
+            문재인 대통령의 국정수행 지지율이 취임 후 처음으로 30%아래로 떨어졌다는 여론조사 결과가 30일 나왔다.
+            <br><br><br>
+            한국갤럽은 지난 27~29일 전국 만 18세 이상 1000명에게 문 대통령이 대통령으로서의 직무를 잘 수행하고 있다고 보느냐고 물은 결과, 긍정평가는 29%였다고 밝혔다. 지난주 대비 2%포인트 하락해 역대 최저치다. 앞서 문 대통령의 직무 긍정률 최저치는 이달 3주차 조사의 30%였다.
+            <br><br><br>
+            부정평가는 지난주와 동일한 60%였다. 11%는 의견을 유보했다.
+            <br><br><br>
+            대통령 직무 수행 부정평가 이유로는 부동산 정책(28%)과 코로나19 대처 미흡(17%) 등이 주로 지적됐다. 이어 경제·민생 문제 해결 부족(9%), 전반적으로 부족하다(5%), 인사(人事) 문제(5%), 독단적·일방적·편파적(4%) 등의 순이었다.
+        </p>
+    </di>
+</body>
+</html>

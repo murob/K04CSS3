@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration01.html</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Noto Serif KR", serif;
+      }
+      .gray {
+        background-color: #e4e6e9;
+      }
+      .span_font {
+        color: #888888;
+        font-size: 10px;
+      }
+      .collapse {
+        border-collapse: collapse;
+      }
+      tr {
+        border: 1px solid #cccccc;
+      }
+      th {
+        font-size: 11px;
+        text-align: left;
+        padding-left: 5px;
+      }
+      td {
+        width: 60%;
+      }
+      .th_padding {
+        padding-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="text-align: right; padding-right: ">
+      <span style="font-size: 12px">* 필수 입력</span>
+    </div>
+    <table class="collapse">
+      <tr>
+        <th class="gray">* 아이디</th>
+        <td>
+          <input type="text" />
+          <button style="background-color: #464646; color: white">
+            중복확인
+          </button>
+          <span class="span_font">+ 4~15자, 첫 영문자, 영문자와 숫자 조합</span>
+        </td>
+      </tr>
+      <tr>
+        <th class="gray">* 비밀번호</th>
+        <td>
+          <input type="password" />
+        </td>
+      </tr>
+      <tr>
+        <th class="gray">* 비밀번호 확인</th>
+        <td>
+          <input type="password" />
+          <span class="span_font">(확인을 위해 다시 입력해 주세요.)</span>
+        </td>
+      </tr>
+      <tr>
+        <th class="gray">
+          <span>*</span>
+          <span>이름</span>
+        </th>
+        <td>
+          <input type="text" />
+        </td>
+      </tr>
+      <tr>
+        <th class="gray th_padding">생년월일</th>
+        <td>
+          <input type="radio" name="gender" checked="checked" />남자
+          <input type="radio" name="gender" />여자
+          <input type="text" size="3" />년 <input type="text" size="1" />월
+          <input type="text" size="1" />일
+          <span class="span_font">(예, 2000년 01월 31일)</span>
+        </td>
+      </tr>
+      <tr>
+        <th class="gray" rowspan="2">* 이메일</th>
+        <td>
+          <input type="text" /> @
+          <input type="email" />
+          <select name="email">
+            <option value="gml">gmail.com</option>
+            <option value="nvr">naver.com</option>
+            <option value="dam">daum.net</option>
+          </select>
+          <input type="radio" />수신허용
+          <input type="radio" checked="checked" />수신불가
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span class="span_font"
+            >※ hanmail.net은 메일 수신이 어려울 수 있으니 가급적 다른 메일을
+            이용하시기 바랍니다.</span
+          >
+        </td>
+      </tr>
+      <tr>
+        <th class="gray th_padding" rowspan="3">주소</th>
+        <td>
+          <button style="background-color: #464646; color: white">
+            주소찾기
+          </button>
+          <input type="text" />
+          <span style="font-size: 12px">(우편번호)</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="text" size="100" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="text" size="80" />
+          <span style="font-size: 12px"> + 나머지 주소</span>
+        </td>
+      </tr>
+      <tr>
+        <th class="gray th_padding">전화번호</th>
+        <td>
+          <input type="text" size="1" /> - <input type="text" size="2" /> -
+          <input type="text" size="2" />
+        </td>
+      </tr>
+      <tr>
+        <th class="gray">* 휴대전화</th>
+        <td>
+          <input type="text" size="1" /> - <input type="text" size="2" /> -
+          <input type="text" size="2" />
+          <input type="radio" checked="checked" /> SMS 수신허용
+          <input type="radio" />SMS 수신불가
+        </td>
+      </tr>
+      <tr>
+        <th class="gray">* 관심분야</th>
+        <td>
+          <select name="Interests">
+            <option value="">:: 관심분야 선택 ::</option>
+            <option value="">컴퓨터</option>
+            <option value="">운동</option>
+            <option value="">법학</option>
+            <option value="">의학</option>
+            <option value="">심리</option>
+            <option value="">노래</option>
+            <option value="">연기</option>
+            <option value="">작곡</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th class="gray">* 가입경로</th>
+        <td>
+          <select name="where?">
+            <option value="">:: 가입경로 선택 ::</option>
+            <option value="">추천</option>
+            <option value="">광고</option>
+            <option value="">검색</option>
+            <option value="">기타</option>
+          </select>
+        </td>
+      </tr>
+    </table>
+    <br />
+    <div style="text-align: center">
+      <button style="background-color: #e70e16; color: white">등록하기</button>
+      <button style="background-color: #464646; color: white">새로쓰기</button>
+    </div>
+  </body>
+</html>

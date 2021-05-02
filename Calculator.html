@@ -6,50 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator.html</title>
     <style>
-      .backdiv {
+      table {
+        width: 425px;
+        height: 368px;
         background-color: #dddddd;
-        height: 370px;
-        width: 420px;
+        border-radius: 10px;
       }
-      .top {
-        border: 2px solid red;
-        height: 32%;
-        width: 420px;
+      th {
+        border-radius: 10px;
       }
-      .middle {
-        border: 2px solid blue;
-        height: 32%;
-        width: 420px;
-      }
-      .bottom {
-        border: 2px solid black;
-        height: 32%;
-        width: 420px;
-      }
-
-      .top_inner {
+      .result {
         background-color: #70c738;
-        height: 85px;
-        width: 417px;
+        font-size: 2.5em;
+        text-align: right;
+        padding-right: 10px;
       }
-      .middle > div {
+      .back_space,
+      .C {
+        width: 50%;
+        font-size: 1.5em;
+      }
+      .gray {
+        background-color: #7b7b7b;
+        color: white;
+      }
+      .black {
         background-color: #373737;
-        height: 50px;
-        width: 200px;
-        display: inline-block;
+        color: white;
+      }
+      .orange {
+        background-color: #fa960a;
+        color: white;
+      }
+      .button_width {
+        width: 25%;
       }
     </style>
   </head>
   <body>
-    <div class="backdiv">
-      <div class="top">
-        <div class="top_inner"></div>
-      </div>
-      <div class="middle">
-        <div style="float: left">BackSpace</div>
-        <div style="float: right">C</div>
-      </div>
-      <div class="bottom"></div>
-    </div>
+    <table border="1" cellspacing="5">
+      <tr>
+        <th class="result" rowspan="2" colspan="4">123+654</th>
+      </tr>
+      <tr></tr>
+      <tr>
+        <th class="back_space gray" colspan="2">BackSpace</th>
+        <th class="C gray" colspan="2">C</th>
+      </tr>
+      <tr>
+        <th class="black button_width">1</th>
+        <th class="black button_width">2</th>
+        <th class="black button_width">3</th>
+        <th class="orange button_width">/</th>
+      </tr>
+      <tr>
+        <th class="black">4</th>
+        <th class="black">5</th>
+        <th class="black">6</th>
+        <th class="orange">x</th>
+      </tr>
+      <tr>
+        <th class="black">7</th>
+        <th class="black">8</th>
+        <th class="black">9</th>
+        <th class="orange">+</th>
+      </tr>
+      <tr>
+        <th class="black">=</th>
+        <th class="black">0</th>
+        <th class="black">.</th>
+        <th class="orange">-</th>
+      </tr>
+    </table>
   </body>
 </html>
